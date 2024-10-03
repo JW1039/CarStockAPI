@@ -6,7 +6,7 @@ Before running the project, please ensure that the following prerequisites are i
 
 ### Dependencies
 - **Dapper**: Used for database queries.
-- **Swashbuckle/Swagger**: Generates the API documentation.
+- **Swagger**: Generates the API documentation.
 
 
 
