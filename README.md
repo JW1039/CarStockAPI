@@ -42,9 +42,8 @@ https://localhost:7037/swagger
 Available user accounts are:
 - Johns-Auto
 - Premium-Cars
-- Budget-Motors
-**The password for all of these is MD5 hashed for simplicity and is set to:** \
-"password" \
+- Budget-Motors \
+**The password for all of these is MD5 hashed for simplicity and is set to:** "password" \
 *For all users.*
 
 This project uses **cookie-based authentication**. You must first log in as a dealer by sending a `POST` request to the `/api/dealers/login` endpoint. Upon successful login, a cookie will be set, and it will be used for all subsequent requests to authorized endpoints.
