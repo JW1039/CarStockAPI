@@ -1,8 +1,7 @@
 # Car Stock Management API
 
 ## Prerequisites
-Before running the project, please ensure that the following prerequisites are installed:
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+Before running the project, please ensure that [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) is installed.
 
 ### Dependencies
 - **Dapper**: Used for database queries.
