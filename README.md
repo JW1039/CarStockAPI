@@ -59,3 +59,39 @@ curl -X POST https://localhost:5001/api/dealers/login \
 
 ## Database
 The database is SQLite stored in [/Data/cars.db](./Data/cars.db)
+
+### Schema
+Here are the columns of each table in Markdown format:
+
+---
+
+#### **Dealers Table**
+
+| Column      | Type     | Description                   |
+|-------------|----------|-------------------------------|
+| DealerId    | INTEGER  | Primary key, auto-incremented. |
+| Name        | TEXT     | Name of the dealer (required). |
+| Password    | TEXT     | Dealer's password.  |
+
+#### **Cars Table**
+
+| Column       | Type     | Description                                       |
+|--------------|----------|---------------------------------------------------|
+| Id           | INTEGER  | Primary key, auto-incremented.                    |
+| Make         | TEXT     | Make of the car (required).                       |
+| Model        | TEXT     | Model of the car (required).                      |
+| Year         | INTEGER  | Year of the car (required).                       |
+| NumberPlate  | TEXT     | Unique number plate (required, must be unique).   |
+| DealerId     | INTEGER  | Foreign key referencing `Dealers(DealerId)`.      |
+
+
+#### **Authentication Table**
+
+| Column      | Type      | Description                                       |
+|-------------|-----------|---------------------------------------------------|
+| AuthId      | INTEGER   | Primary key, auto-incremented.                    |
+| DealerId    | INTEGER   | Foreign key referencing `Dealers(DealerId)`.      |
+| AuthToken   | TEXT      | The authentication token for the dealer.          |
+| TokenExpiry | DATETIME  | Expiry date and time of the token.                |
+
+
