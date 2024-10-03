@@ -44,7 +44,7 @@ Available user accounts are:
 - Premium-Cars
 - Budget-Motors
 **The password for all of these is MD5 hashed for simplicity and is set to:** \
-password \
+"password" \
 *For all users.*
 
 This project uses **cookie-based authentication**. You must first log in as a dealer by sending a `POST` request to the `/api/dealers/login` endpoint. Upon successful login, a cookie will be set, and it will be used for all subsequent requests to authorized endpoints.
