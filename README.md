@@ -61,9 +61,6 @@ curl -X POST https://localhost:5001/api/dealers/login \
 The database is SQLite stored in [/Data/cars.db](./Data/cars.db)
 
 ### Schema
-Here are the columns of each table in Markdown format:
-
----
 
 #### **Dealers Table**
 
